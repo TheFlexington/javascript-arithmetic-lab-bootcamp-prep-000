@@ -25,7 +25,7 @@ function dec(n) {
 function makeInt(n) {
   if (parseInt(n))
   return parseInt(n);
-  else if (parseInt(n, 10) === parseInt(n))
+  else if (makeInt(n, 10) === makeInt(n))
   return (parseInt(n, 10));
   else if (parseInt(n) == parseInt('nonsense!'))
   return (parseInt(n));
